@@ -1,4 +1,0 @@
--team
--team_group
--match
--place
