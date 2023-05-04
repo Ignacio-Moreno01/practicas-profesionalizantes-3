@@ -1,0 +1,43 @@
+.calc{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    width: 340px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+.calc td button{
+    display: block;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+#result{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* overflow-y: scroll; */
+}
+
+#del{
+    display: block;
+    text-align: center;
+    background-color: #e33;
+    font-size: 40px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: -85px;
+    margin-left: 406px;
+}
