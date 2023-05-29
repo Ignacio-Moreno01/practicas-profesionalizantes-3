@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator V0</title>
+        <style>
+            .container{
+                background-color: #888;
+                /* display: block; */
+                margin: 0;
+                padding: 0;
+                width: 345px;
+                height: 450px;
+                border-radius: 10px;
+            }
+
+            .keys{
+                display: block;
+                margin: 0;
+                padding: 20px;
+                /* width: 210px; */
+                height: 240px;
+                border-radius: 10px;
+                /* text-align: center; */
+            }
+
+            .keys td button{
+                display: block;
+                width: 70px;
+                height: 70px;
+                font-size: 30px;
+                border-radius: 10px;
+            }
+
+            #display{
+                display: block;
+                background-color: #fff;
+                margin: 0;
+                padding: 0;
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                border-radius: 10px;
+            }
+
+            .numbers{
+                background-color: blue;
+                color: white;
+                /* height: 300px; */
+                border-radius: 5px;
+                font-size: 30px;
+            }
+
+            .operations{
+                background-color: green;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 30px;
+            }
+
+            #del{
+                background-color: #f00;
+                color: #fff;
+                width: 300px;
+                height: 50px;
+                border-radius: 5px;
+                font-size: 30px;
+                margin-top: 120px;
+                /* text-align: center; */
+                /* display: block; */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <table class="keys">
+                <tr>
+                    <td colspan="4">
+                        <span id="display" type="text"></span> 
+                    </td>
+                </tr>
+                <tr>            
+                    <td><button class="numbers" id="one">1</button></td> 
+                    <td><button class="numbers" id="two">2</button></td>
+                    <td><button class="numbers" id="three">3</button></td>
+                    <td><button class="operations" id="equal">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="numbers" id="four">4</button></td>
+                    <td><button class="numbers" id="five">5</button></td>
+                    <td><button class="numbers" id="six">6</button></td>
+                    <td><button class="operations" id="rest">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="numbers" id="seven">7</button></td>
+                    <td><button class="numbers" id="eight">8</button></td>
+                    <td><button class="numbers" id="nine">9</button></td>
+                    <td><button class="operations" id="multiply">*</button></td>
+                </tr>
+                <tr> 
+                    <td><button class="numbers" id="zero">0</button></td>
+                    <td><button class="numbers" id="point">.</button></td>
+                    <td><button class="operations" id="equality">=</button></td>
+                    <td><button class="operations" id="division">/</button></td>
+                </tr>
+            </table>
+            <table class="keys">
+                <tr>
+                    <td><button id="del">borrar</button></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+
+</html>
