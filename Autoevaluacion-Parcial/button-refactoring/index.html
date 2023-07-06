@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Button Component</title>      
+   </head>
+</html>
+
+<script type="text/javascript">  
+
+class ButtonStateModel
+{
+	constructor()
+	{
+		this.value = 0;
+	}
+
+	increment()
+	{
+		this.value = this.value+1;
+	}
+
+	read()
+	{
+		return this.value;
+	}
+}
+
+class ButtonStatePlusModel
+{
+	constructor()
+	{
+		this.value = 0;
+        this.top = 255;
+	}
+
+	increment()
+	{
+		if(this.value+2 <= this.top){
+            this.value+=2;
+        }
+	}
+
+	read()
+	{
+		return this.value;
+	}
+}
+
+class ButtonStateController
+{
+	constructor( model, view )
+	{
+		this.innerModel = model;
+		this.innerView = view;
+	}
+
+	init()
+	{
+		this.innerView.setValue( this.innerModel.read() );
+	}
+
+	onclick()
+	{
+		this.innerModel.increment();
+		this.innerView.setValue( this.innerModel.read() );
+	}
+}
+
+class ButtonStateView extends HTMLElement
+{
+	constructor()
+	{
+		super();
+
+		this.innerModel = new ButtonStateModel();
+        this.innerPlusModel = new ButtonStatePlusModel();
+		this.innerController = new ButtonStateController(this.innerPlusModel, this);
+		
+		this.duplicateBtn = document.createElement('button');
+        this.duplicateBtn.style.backgroundColor = 'rgb(255, 0, 0)';
+		this.appendChild(this.duplicateBtn);
+	}
+
+	connectedCallback()
+	{
+		this.duplicateBtn.onclick = ()=> this.innerController.onclick();
+		this.innerController.init();
+	}
+
+	setValue( value )
+	{
+		this.duplicateBtn.innerText = value.toString();
+        let darkness = Math.floor((value / 255) * 100);
+        this.duplicateBtn.style.backgroundColor = `rgb(${255 - darkness}, ${0 - darkness}, ${0 - darkness})`;
+    }	
+}
+
+customElements.define('x-button', ButtonStateView );
+
+function main()
+{
+	let testButton = new ButtonStateView();
+	document.body.appendChild(testButton);
+}
+
+window.onload = main;
+</script>
