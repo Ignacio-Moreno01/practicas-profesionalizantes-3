@@ -1,0 +1,39 @@
+table, td, tr, th 
+{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+.categoryField 
+{
+    margin-right: 10px;
+}
+#friends 
+{
+    color: #fff;
+    background-color: #42e700;
+}
+#job 
+{
+    color: #fff;
+    background-color: #b80000;
+}
+#studies 
+{
+    color: #fff;
+    background-color: #dd8500;
+}
+#family 
+{
+    color: #fff;
+    background-color: #d100d1;
+}
+#favorites 
+{
+    color: #fff;
+    background-color: #008d63;
+}
+#services 
+{
+    color: #fff;
+    background-color: #001aff;
+}
