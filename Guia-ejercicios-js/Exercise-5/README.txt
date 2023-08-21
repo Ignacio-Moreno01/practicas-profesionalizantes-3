@@ -1,0 +1,1 @@
+5. Desarrolle un objeto de datos que represente toda la información de los datos metereológicos de Mar del Plata.

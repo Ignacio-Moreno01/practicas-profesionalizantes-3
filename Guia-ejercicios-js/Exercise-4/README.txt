@@ -1,0 +1,1 @@
+4. Desarrolle un objeto de datos que posibilite representar la estructura de la factura adjuntada de la AFIP.

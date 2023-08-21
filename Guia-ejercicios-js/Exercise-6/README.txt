@@ -1,0 +1,2 @@
+6. Tomando la estructura de datos desarrollada en el punto 5. Complétela con información y desarrolle una 
+función que devuelva el conjunto de todos los promedios de todas las temperaturas representadas.
