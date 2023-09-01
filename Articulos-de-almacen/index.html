@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Almacen online</title>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+    <body>
+        <div>
+            <div id="subtitle">
+                <h1>Articulos de Almacen</h1>
+            </div>
+            <div class="articles">
+                <h3>Seleccione los articulos que desee comprar para agregarlos al carrito...</h3>
+                <div id="products"></div>
+                <br></br>
+            </div>
+            <div class="shopCart">
+                <h2>Carrito de compras</h2>
+                <ul id="cart"></ul>
+                <p>Total a pagar: $<span id="total">0</span></p>
+            </div>
+        </div>
+        
+        <script src="./store/model.js"></script>
+        <script src="./store/view.js"></script>
+        <script src="./store/controller.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

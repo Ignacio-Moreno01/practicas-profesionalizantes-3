@@ -1,0 +1,12 @@
+// Artículo  OK
+// Stock de artículos  OK
+// Cliente ??
+// Orden de compra OK
+// Almacén OK
+// Lista de órdenes de compras / Carrito OK
+// Precio OK
+// Imágenes ??
+
+// Button: Agregar OK
+// Button: flecha arriba
+// Button: flecha abajo
